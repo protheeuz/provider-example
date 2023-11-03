@@ -18,11 +18,14 @@ class ProductsOverviewScreen extends StatelessWidget {
     },
   );
 
+  ProductsOverviewScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MyShop'),
+        title: const Text('MyShop'),
+        centerTitle: true,
       ),
       body: GridView.builder(
         padding: const EdgeInsets.all(10.0),
@@ -32,7 +35,7 @@ class ProductsOverviewScreen extends StatelessWidget {
           loadedProducts[i].title!,
           loadedProducts[i].imageUrl!,
         ),
-        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           childAspectRatio: 3 / 2,
           crossAxisSpacing: 10,

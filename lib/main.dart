@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       home: ProductsOverviewScreen(),
       routes: {
-        ProductDetailScreen.routeName: (ctx) => ProductDetailScreen(),
+        ProductDetailScreen.routeName: (ctx) => const ProductDetailScreen(),
       },
     );
   }

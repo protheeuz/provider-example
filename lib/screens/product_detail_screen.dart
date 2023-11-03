@@ -7,6 +7,8 @@ class ProductDetailScreen extends StatelessWidget {
   // ProductDetailScreen(this.title, this.price);
   static const routeName = '/product-detail';
 
+  const ProductDetailScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final productId =
@@ -14,7 +16,7 @@ class ProductDetailScreen extends StatelessWidget {
     // ...
     return Scaffold(
       appBar: AppBar(
-        title: Text('Product Details'),
+        title: const Text('Product Details'),
       ),
       body: Center(
         child: Text("INI ADALAG PAGE PRODUK ($productId)"),
