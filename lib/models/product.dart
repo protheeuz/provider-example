@@ -17,3 +17,6 @@ class Product {
     this.isFavorite = false,
   });
 }
+
+
+

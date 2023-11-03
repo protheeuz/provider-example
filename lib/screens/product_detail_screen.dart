@@ -13,13 +13,17 @@ class ProductDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final productId =
         ModalRoute.of(context)?.settings.arguments as String; // is the id!
+
+    // final product = Provider.of<Products>(context)
+    //     .allproducts
+    //     .firstWhere((prod_id) => prod_id == productId);
     // ...
     return Scaffold(
       appBar: AppBar(
         title: const Text('Product Details'),
       ),
       body: Center(
-        child: Text("INI ADALAG PAGE PRODUK ($productId)"),
+        child: Text("INI ADALAH PAGE PRODUK ($productId)"),
       ),
     );
   }
